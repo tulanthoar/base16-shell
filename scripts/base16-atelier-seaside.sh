@@ -11,25 +11,27 @@ fi
 color00="13/15/13" # Base 00 - Black
 color01="e6/19/3c" # Base 08 - Red
 color02="29/a3/29" # Base 0B - Green
-color03="98/98/1b" # Base 0A - Yellow
-color04="3d/62/f5" # Base 0D - Blue
-color05="ad/2b/ee" # Base 0E - Magenta
+color03="d4/d4/11" # Base 0A - Yellow
+color04="0b/73/da" # Base 0D - Blue
+color05="93/11/d4" # Base 0E - Magenta
 color06="19/99/b3" # Base 0C - Cyan
-color07="8c/a6/8c" # Base 05 - White
-color08="68/7d/68" # Base 03 - Bright Black
-color09=$color01 # Base 08 - Bright Red
-color10=$color02 # Base 0B - Bright Green
-color11=$color03 # Base 0A - Bright Yellow
-color12=$color04 # Base 0D - Bright Blue
-color13=$color05 # Base 0E - Bright Magenta
-color14=$color06 # Base 0C - Bright Cyan
+color07="c5/d3/c5" # Base 05 - White
+color08="68/68/7d" # Base 03 - Bright Black
+color09="ed/5e/76" # Base 08 - Bright Red
+color10="85/e0/85" # Base 0B - Bright Green
+color11="ee/ee/2b" # Base 0A - Bright Yellow
+color12="55/76/f6" # Base 0D - Bright Blue
+color13="b6/42/f0" # Base 0E - Bright Magenta
+color14="4d/cc/e6" # Base 0C - Bright Cyan
 color15="f4/fb/f4" # Base 07 - Bright White
-color16="87/71/1d" # Base 09
+color16="a8/66/24" # Base 09
 color17="e6/19/c3" # Base 0F
 color18="24/29/24" # Base 01
-color19="5e/6e/5e" # Base 02
-color20="80/99/80" # Base 04
+color19="19/2b/34" # Base 02
+color20="66/cc/ff" # Base 04
 color21="cf/e8/cf" # Base 06
+color22="47/99/eb" # Base 06
+color23="15/01/12" # Base 06
 color_foreground="8c/a6/8c" # Base 05
 color_background="13/15/13" # Base 00
 color_cursor="8c/a6/8c" # Base 05
@@ -76,6 +78,8 @@ printf $printf_template 18 $color18
 printf $printf_template 19 $color19
 printf $printf_template 20 $color20
 printf $printf_template 21 $color21
+printf $printf_template 22 $color22
+printf $printf_template 23 $color23
 
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then
@@ -118,6 +122,8 @@ unset color18
 unset color19
 unset color20
 unset color21
+unset color22
+unset color23
 unset color_foreground
 unset color_background
 unset color_cursor
