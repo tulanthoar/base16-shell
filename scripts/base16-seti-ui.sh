@@ -9,27 +9,32 @@ if [ "${TERM%%-*}" = 'linux' ]; then
 fi
 
 color00="15/17/18" # Base 00 - Black
-color01="Cd/3f/45" # Base 08 - Red
+color01="cd/3f/45" # Base 08 - Red
 color02="9f/ca/56" # Base 0B - Green
 color03="e6/cd/69" # Base 0A - Yellow
 color04="55/b5/db" # Base 0D - Blue
-color05="a0/74/c4" # Base 0E - Magenta
+color05="91/5e/ba" # Base 0E - Magenta
 color06="55/db/be" # Base 0C - Cyan
-color07="d6/d6/d6" # Base 05 - White
-color08="41/53/5B" # Base 03 - Bright Black
-color09=$color01 # Base 08 - Bright Red
-color10=$color02 # Base 0B - Bright Green
-color11=$color03 # Base 0A - Bright Yellow
-color12=$color04 # Base 0D - Bright Blue
-color13=$color05 # Base 0E - Bright Magenta
-color14=$color06 # Base 0C - Bright Cyan
-color15="ff/ff/ff" # Base 07 - Bright White
+color07="d8/d4/d4" # Base 05 - White
+color08="55/6d/77" # Base 03 - Bright Black
+color09="d5/5d/63" # Base 08 - Bright Red
+color10="b2/d4/77" # Base 0B - Bright Green
+color11="ed/da/92" # Base 0A - Bright Yellow
+color12="6c/bf/e0" # Base 0D - Bright Blue
+color13="b6/94/d1" # Base 0E - Bright Magenta
+color14="6c/e0/c7" # Base 0C - Bright Cyan
+color15="f3/f2/f2" # Base 07 - Bright White
 color16="db/7b/55" # Base 09
 color17="8a/55/3f" # Base 0F
-color18="8e/c4/3d" # Base 01
+color18="1b/1f/14" # Base 01
 color19="3B/75/8C" # Base 02
 color20="43/a5/d5" # Base 04
 color21="ee/ee/ee" # Base 06
+color22="06/06/14" # Base 06
+color23="14/05/09" # Base 06
+color24="0c/0d/0e" # Base 06
+color25="24/27/29" # Base 06
+color26="2f/34/37" # Base 06
 color_foreground="d6/d6/d6" # Base 05
 color_background="15/17/18" # Base 00
 color_cursor="d6/d6/d6" # Base 05
@@ -76,6 +81,11 @@ printf $printf_template 18 $color18
 printf $printf_template 19 $color19
 printf $printf_template 20 $color20
 printf $printf_template 21 $color21
+printf $printf_template 22 $color22
+printf $printf_template 23 $color23
+printf $printf_template 24 $color24
+printf $printf_template 25 $color25
+printf $printf_template 26 $color26
 
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then
@@ -118,6 +128,11 @@ unset color18
 unset color19
 unset color20
 unset color21
+unset color22
+unset color23
+unset color24
+unset color25
+unset color26
 unset color_foreground
 unset color_background
 unset color_cursor

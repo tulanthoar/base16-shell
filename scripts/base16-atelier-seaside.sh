@@ -32,6 +32,7 @@ color20="66/cc/ff" # Base 04
 color21="cf/e8/cf" # Base 06
 color22="47/99/eb" # Base 06
 color23="15/01/12" # Base 06
+color24="19/19/34" # Base 01
 color_foreground="8c/a6/8c" # Base 05
 color_background="13/15/13" # Base 00
 color_cursor="8c/a6/8c" # Base 05
@@ -80,6 +81,7 @@ printf $printf_template 20 $color20
 printf $printf_template 21 $color21
 printf $printf_template 22 $color22
 printf $printf_template 23 $color23
+printf $printf_template 24 $color24
 
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then
@@ -124,6 +126,7 @@ unset color20
 unset color21
 unset color22
 unset color23
+unset color24
 unset color_foreground
 unset color_background
 unset color_cursor
