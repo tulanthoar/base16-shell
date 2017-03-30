@@ -1,7 +1,7 @@
 #!/bin/sh
 # base16-shell (https://github.com/chriskempson/base16-shell)
 # Base16 Shell template by Chris Kempson (http://chriskempson.com)
-# Seti UI scheme by 
+# Seti UI scheme by
 
 # This script doesn't support linux console (use 'vconsole' template instead)
 if [ "${TERM%%-*}" = 'linux' ]; then
@@ -37,7 +37,7 @@ color25="24/27/29" # Base 06
 color26="2f/34/37" # Base 06
 color27="46/63/b9" # Base 06
 color28="33/00/66" # Base 06
-color29="4d/00/4d" # Base 06
+color29="3d/0f/3d" # Base 06
 color_foreground="d6/d6/d6" # Base 05
 color_background="15/17/18" # Base 00
 color_cursor="d6/d6/d6" # Base 05
